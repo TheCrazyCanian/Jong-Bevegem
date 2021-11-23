@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="./Afbeeldingen/icons/JongBevegem_Logo.jpg">
+    <title>Jong Bevegem</title>
+</head>
+
+<body>
+    <header>
+        <img alt="Kan afbeelding niet laden" src="Afbeeldingen/JB_veld_3.jpg" class="headerFoto1">
+        <img alt="Kan afbeelding niet laden" src="./Afbeeldingen/JB_logo.png" class="headerFoto2">
+        <nav>
+            <ul id="nav">
+                <li class="nav1">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav2">
+                    <a href="ploeg.html">Ploeg</a>
+                </li>
+                <li class="nav3">
+                    <a href="sponsors.html">Sponsors</a>
+                </li>
+                <li class="nav4">
+                    <a href="svdw.html" id="actief">Speler Van De Week</a>
+                </li>
+                <li class="nav5">
+                    <a href="kalender.html">Kalender</a>
+                </li>
+                <li class="nav6">
+                    <a href="info.html">Info</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" id="hamburger">
+            <img src="./Afbeeldingen/icons/icons8-menu.svg">
+        </a>
+    </header>
+
+    <div class="bodyZonderHeader">
+        <main>
+            <h1>Speler Van De Week</h1>
+            <p>
+                Hier kan u terecht voor onze wekelijkse onderlinge competitie. Er kan elke week gestemd worden op
+                'speler van de week'. Indien er een speler niet in de lijst staat kan je het ook altijd in de
+                'opmerkingen' zetten.
+            </p>
+            <article>
+                <form name="Speler Van De Week" method="POST" data-netlify="true" id="formsvdw">
+                    <fieldset>
+                        <div>
+                            <label for="voornaam">Naam</label>
+                            <input type="text" name="voornaam" id="voornaam" placeholder="Karel" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="naam">Achternaam</label>
+                            <input type="text" name="naam" id="naam" placeholder="De Grootte" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nr1">Beste speler van de match</label>
+                            <select name="nr1" id="nr1" required>
+                                <option disabled selected value> -- Kies een optie -- </option>
+                                <option value="Anton Vanhauwere">Anton Vanhauwere</option>
+                                <option value="Dries Hofman">Dries Hofman</option>
+                                <option value="Dries Uytterhaegen">Dries Uytterhaegen</option>
+                                <option value="Emiel van Wetter">Emiel van Wetter</option>
+                                <option value="Gilles Speltincx">Gilles Speltincx</option>
+                                <option value="Isaak Noerens">Isaak Noerens</option>
+                                <option value="Jari Verhecken">Jari Verhecken</option>
+                                <option value="Jens De Temmerman">Jens De Temmerman</option>
+                                <option value="Jens Lateur">Jens Lateur</option>
+                                <option value="Jona Vangansbeke">Jona Vangansbeke</option>
+                                <option value="Lucas Ardyns">Lucas Ardyns</option>
+                                <option value="Maarten Van Snick">Maarten Van Snick</option>
+                                <option value="Marcel Machiels">Marcel Machiels</option>
+                                <option value="Mathias Schepers">Mathias Schepers</option>
+                                <option value="Matthias Callebaut">Matthias Callebaut</option>
+                                <option value="Matthieu De Pauw">Matthieu De Pauw</option>
+                                <option value="Mauritz Carlier">Mauritz Carlier</option>
+                                <option value="Michiel Degroote">Michiel Degroote</option>
+                                <option value="Miel Herreman">Miel Herreman</option>
+                                <option value="Nisse Verstuyft">Nisse Verstuyft</option>
+                                <option value="Reggie Demoor">Reggie Demoor</option>
+                                <option value="Sem Backaert">Sem Backaert</option>
+                                <option value="Thomas Schepers">Thomas Schepers</option>
+                                <option value="Tim Notebaert">Tim Notebaert</option>
+                                <option value="Wout Van der Meulen">Wout Van der Meulen</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nr2">Tweede beste speler van de match</label>
+                            <select name="nr2" id="nr2" required>
+                                <option disabled selected value> -- Kies een optie -- </option>
+                                <option value="Anton Vanhauwere">Anton Vanhauwere</option>
+                                <option value="Dries Hofman">Dries Hofman</option>
+                                <option value="Dries Uytterhaegen">Dries Uytterhaegen</option>
+                                <option value="Emiel van Wetter">Emiel van Wetter</option>
+                                <option value="Gilles Speltincx">Gilles Speltincx</option>
+                                <option value="Isaak Noerens">Isaak Noerens</option>
+                                <option value="Jari Verhecken">Jari Verhecken</option>
+                                <option value="Jens De Temmerman">Jens De Temmerman</option>
+                                <option value="Jens Lateur">Jens Lateur</option>
+                                <option value="Jona Vangansbeke">Jona Vangansbeke</option>
+                                <option value="Lucas Ardyns">Lucas Ardyns</option>
+                                <option value="Maarten Van Snick">Maarten Van Snick</option>
+                                <option value="Marcel Machiels">Marcel Machiels</option>
+                                <option value="Mathias Schepers">Mathias Schepers</option>
+                                <option value="Matthias Callebaut">Matthias Callebaut</option>
+                                <option value="Matthieu De Pauw">Matthieu De Pauw</option>
+                                <option value="Mauritz Carlier">Mauritz Carlier</option>
+                                <option value="Michiel Degroote">Michiel Degroote</option>
+                                <option value="Miel Herreman">Miel Herreman</option>
+                                <option value="Nisse Verstuyft">Nisse Verstuyft</option>
+                                <option value="Reggie Demoor">Reggie Demoor</option>
+                                <option value="Sem Backaert">Sem Backaert</option>
+                                <option value="Thomas Schepers">Thomas Schepers</option>
+                                <option value="Tim Notebaert">Tim Notebaert</option>
+                                <option value="Wout Van der Meulen">Wout Van der Meulen</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nr3">Derde beste speler van de match</label>
+                            <select name="nr3" id="nr3" required>
+                                <option disabled selected value> -- Kies een optie -- </option>
+                                <option value="Anton Vanhauwere">Anton Vanhauwere</option>
+                                <option value="Dries Hofman">Dries Hofman</option>
+                                <option value="Dries Uytterhaegen">Dries Uytterhaegen</option>
+                                <option value="Emiel van Wetter">Emiel van Wetter</option>
+                                <option value="Gilles Speltincx">Gilles Speltincx</option>
+                                <option value="Isaak Noerens">Isaak Noerens</option>
+                                <option value="Jari Verhecken">Jari Verhecken</option>
+                                <option value="Jens De Temmerman">Jens De Temmerman</option>
+                                <option value="Jens Lateur">Jens Lateur</option>
+                                <option value="Jona Vangansbeke">Jona Vangansbeke</option>
+                                <option value="Lucas Ardyns">Lucas Ardyns</option>
+                                <option value="Maarten Van Snick">Maarten Van Snick</option>
+                                <option value="Marcel Machiels">Marcel Machiels</option>
+                                <option value="Mathias Schepers">Mathias Schepers</option>
+                                <option value="Matthias Callebaut">Matthias Callebaut</option>
+                                <option value="Matthieu De Pauw">Matthieu De Pauw</option>
+                                <option value="Mauritz Carlier">Mauritz Carlier</option>
+                                <option value="Michiel Degroote">Michiel Degroote</option>
+                                <option value="Miel Herreman">Miel Herreman</option>
+                                <option value="Nisse Verstuyft">Nisse Verstuyft</option>
+                                <option value="Reggie Demoor">Reggie Demoor</option>
+                                <option value="Sem Backaert">Sem Backaert</option>
+                                <option value="Thomas Schepers">Thomas Schepers</option>
+                                <option value="Tim Notebaert">Tim Notebaert</option>
+                                <option value="Wout Van der Meulen">Wout Van der Meulen</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="opmerking" id="labelOpmerking">Opmerkingen bij de afgelopen wedstrijd</label>
+                            <textarea name="opmerking" id="opmerking"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Verzenden" id="submit">
+                            <input type="reset" value="Reset" id="reset">
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footerLinks">
+            <p class="footerP">ADRES</p> <br class="footerBr">
+            <p>Hemelrijkstraat <br>9620 Zottegem</p>
+        </div>
+        <br>
+        <br>
+        <div class="footerMidden">
+            <p class="footerP"> VOLG ONS OP </p> <br class="footerBr">
+            <a href="https://www.google.be/maps/place/Jong+Bevegem/@50.8669969,3.8241055,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3a729059b57b3:0x80809011eb730bbe!8m2!3d50.8669969!4d3.8262942"
+                target="_blank"><img src="Afbeeldingen/icons/map.svg" alt="icoon van een map" class="icon_footer"></a>
+            <a href="mailto:jongbevegem@gmail.com"><img src="Afbeeldingen/icons/envelope.svg"
+                    alt="icoon van een envelope" class="icon_footer"></a>
+            <a href="https://www.facebook.com/JongBevegem/" target="_blank"><img src="Afbeeldingen/icons/facebook.svg"
+                    alt="icoon van facebook" class="icon_footer"></a>
+            <a href="https://www.instagram.com/jongbevegem/" target="_blank"><img src="Afbeeldingen/icons/instagram.svg"
+                    alt="icoon van instagram" class="icon_footer"></a>
+        </div>
+        <br>
+        <br>
+        <div class="footerRechts">
+            <p class="footerP">Contact</p> <br class="footerBr">
+            <p>jongbevegem@gmail.com <br> +32471851545</p>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Jong Bevegem &copy; 2021 - All rights reserved.</p>
+    </div>
+
+    <script id="script">
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>

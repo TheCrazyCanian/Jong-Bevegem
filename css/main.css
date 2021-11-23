@@ -1,0 +1,614 @@
+@import url(reset.css);
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.3;
+    margin: 0 auto;
+}
+
+strong {
+    font-weight: bold;
+}
+
+p {
+    margin: 0 5px;
+}
+
+/*
+    --------------------------------------------------------------
+    nav
+    --------------------------------------------------------------
+*/
+
+header li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#nav {
+    display: none;
+    flex-direction: column;
+}
+
+#hamburger {
+    display: block;
+    position: absolute;
+    margin: 5px;
+    right: 0;
+    top: 0;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6 {
+    flex: 1 1 0;
+    border: .5px solid black;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5 {
+    border-bottom: none;
+}
+
+#actief {
+    color: firebrick;
+}
+
+header li a:link {
+    color: black;
+}
+
+header li a:visited {
+    color: black;
+}
+
+header li a:hover {
+    color: white;
+}
+
+header li:hover {
+    background-color: lightgray;
+}
+
+/*
+    --------------------------------------------------------------
+    footer
+    --------------------------------------------------------------
+*/
+.icon_footer {
+    width: 25px;
+    padding: 0 2px;
+}
+
+.footer {
+    margin: 10px 0 0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid lightgray;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerP {
+    margin: 3px 0;
+}
+
+.footerBr {
+    display: none;
+}
+
+.footerLinks {
+    flex: 1 1 0;
+}
+
+.footerMidden {
+    flex: 1 1 0;
+}
+
+.footerRechts {
+    flex: 1 1 0;
+}
+
+.copyright {
+    display: block;
+    padding: 3px 0;
+    text-align: center;
+    font-size: 10px;
+}
+
+/*
+    --------------------------------------------------------------
+    Afbeeldingen
+    --------------------------------------------------------------
+    */
+
+.headerFoto1 {
+    display: none;
+}
+
+.headerFoto2 {
+    width: 100%;
+}
+
+#groepsfoto {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+    --------------------------------------------------------------
+    h1, h2
+    --------------------------------------------------------------
+    */
+h1 {
+    margin: 10px 2px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+h2 {
+    margin: 10px 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*
+    --------------------------------------------------------------
+    iframe's
+    --------------------------------------------------------------
+    */
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 20px 1px;
+}
+
+#kalender {
+    display: block;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 500px;
+}
+
+#kalenderMini {
+    display: block;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 500px;
+}
+
+/*
+    --------------------------------------------------------------
+    form
+    --------------------------------------------------------------
+    */
+fieldset {
+    margin: 20px 5px;
+}
+
+label {
+    display: inline-block;
+    width: 40%;
+    padding: 10px 0;
+}
+
+input {
+    float: right;
+    width: 50%;
+    padding: 8.32px 0;
+}
+
+select {
+    float: right;
+    width: 50.7%;
+    height: 36.63px;
+}
+
+#labelOpmerking {
+    width: 100%;
+}
+
+textarea {
+    float: inline-block;
+    width: 99.9%;
+    height: 150px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#reset,
+#submit {
+    background-color: firebrick;
+    color: white;
+    border: 1px solid white;
+}
+
+#reset:hover,
+#submit:hover {
+    cursor: pointer;
+    background-color: rgb(150, 14, 14);
+}
+
+
+#reset {
+    float: right;
+    width: 50%;
+}
+
+#submit {
+    float: left;
+    width: 50%;
+}
+
+/*
+    --------------------------------------------------------------
+    Info: Contact en Locatie
+    --------------------------------------------------------------
+    */
+#infoLocatie {
+    width: 100%;
+}
+
+#infoContact {
+    width: 100%;
+
+}
+
+/*
+    --------------------------------------------------------------
+    Sponsors: Afbeeldingen + tekst
+    --------------------------------------------------------------
+*/
+.sponsorColumn {
+    padding: 10px 0;
+}
+
+.imgSponsors {
+    max-width: 100%;
+    border-bottom: 0.5px solid lightgray;
+}
+
+#sponsorsLaatsteFoto {
+    border-bottom: none;
+}
+
+/*
+________________________________________________________________________________________________________________
+----------------------------------------------------------------------------------------------------------------
+________________________________________________________________________________________________________________
+*/
+@media screen and (min-width: 900px) {
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        line-height: 1.3;
+        margin: 0 auto;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    /*
+    --------------------------------------------------------------
+    nav
+    --------------------------------------------------------------
+    */
+
+    header li a {
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .nav1,
+    .nav2,
+    .nav3,
+    .nav4,
+    .nav5,
+    .nav6 {
+        flex: 1 1 0;
+        border: .5px solid black;
+        text-align: center;
+    }
+
+    .nav1,
+    .nav2,
+    .nav3,
+    .nav4,
+    .nav5 {
+        border-right: none;
+    }
+
+    #actief {
+        color: firebrick;
+    }
+
+    header li a:link {
+        color: black;
+    }
+
+    header li a:visited {
+        color: black;
+    }
+
+    header li a:hover {
+        color: white;
+    }
+
+    header li:hover {
+        background-color: lightgray;
+    }
+
+    /*
+    --------------------------------------------------------------
+    footer
+    --------------------------------------------------------------
+    */
+    .icon_footer {
+        width: 25px;
+        padding: 0 2px;
+    }
+
+    .footer {
+        margin: 10px 0 0;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 15px;
+        border: 1px solid lightgray;
+        border-left: none;
+        border-right: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerP {
+        margin: 0;
+    }
+
+    .footerBr {
+        display: initial;
+    }
+
+    .footerLinks {
+        flex: 1 1 0;
+    }
+
+    .footerMidden {
+        flex: 1 1 0;
+    }
+
+    .footerRechts {
+        flex: 1 1 0;
+    }
+
+    .copyright {
+        display: block;
+        padding: 3px 0;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    /*
+    --------------------------------------------------------------
+    Afbeeldingen
+    --------------------------------------------------------------
+    */
+
+    .headerFoto1 {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headerFoto2 {
+        display: none;
+    }
+
+    #groepsfoto {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*
+    --------------------------------------------------------------
+    Tekst zonder header
+    --------------------------------------------------------------
+    */
+    .bodyZonderHeader {
+        display: block;
+        padding: 0 1%;
+    }
+
+    /*
+    --------------------------------------------------------------
+    h1, h2
+    --------------------------------------------------------------
+    */
+    h1 {
+        margin: 10px 0;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    h2 {
+        margin: 10px 0;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /*
+    --------------------------------------------------------------
+    iframe's
+    --------------------------------------------------------------
+    */
+    #map {
+        width: 100%;
+        height: 500px;
+        margin: 20px 0;
+    }
+
+    #kalender {
+        display: block;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 700px;
+    }
+
+    #kalenderMini {
+        display: block;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 700px;
+    }
+
+    /*
+    --------------------------------------------------------------
+    form
+    --------------------------------------------------------------
+    */
+    fieldset {
+        margin: 20px 5px;
+    }
+
+    label {
+        display: inline-block;
+        width: 40%;
+        padding: 10px 0;
+    }
+
+    input {
+        float: right;
+        width: 50%;
+        padding: 8.32px 0;
+    }
+
+    select {
+        float: right;
+        width: 50.2%;
+        height: 36.63px;
+    }
+
+    #labelOpmerking {
+        width: 100%;
+    }
+
+    textarea {
+        float: inline-block;
+        width: 99.9%;
+        height: 150px;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #reset,
+    #submit {
+        background-color: firebrick;
+        color: white;
+        border: 1px solid white;
+    }
+
+    #reset:hover,
+    #submit:hover {
+        cursor: pointer;
+        background-color: rgb(150, 14, 14);
+    }
+
+
+    #reset {
+        float: right;
+        width: 50%;
+    }
+
+    #submit {
+        float: left;
+        width: 50%;
+    }
+
+    /*
+    --------------------------------------------------------------
+    Info: Contact en Locatie
+    --------------------------------------------------------------
+    */
+    #infoLocatie {
+        float: left;
+        width: 50%;
+    }
+
+    #infoContact {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    /*
+    --------------------------------------------------------------
+    Sponsors: Afbeeldingen + tekst
+    --------------------------------------------------------------
+    */
+    .sponsorContainer:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .sponsorRow {
+        display: flex;
+    }
+
+    .sponsorColumn {
+        padding: 0;
+        flex: 1 1 0;
+    }
+
+    .sponsorColumn:nth-child(2) {
+        padding-left: 20px;
+    }
+
+    .imgSponsors {
+        max-width: 100%;
+        border: none;
+    }
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="./Afbeeldingen/icons/JongBevegem_Logo.jpg">
+    <title>Jong Bevegem</title>
+</head>
+
+<body>
+    <header>
+        <img alt="Kan afbeelding niet laden" src="Afbeeldingen/JB_veld_3.jpg" class="headerFoto1">
+        <img alt="Kan afbeelding niet laden" src="./Afbeeldingen/JB_logo.png" class="headerFoto2">
+        <nav>
+            <ul id="nav">
+                <li class="nav1">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav2">
+                    <a href="ploeg.html">Ploeg</a>
+                </li>
+                <li class="nav3">
+                    <a href="sponsors.html">Sponsors</a>
+                </li>
+                <li class="nav4">
+                    <a href="svdw.html">Speler Van De Week</a>
+                </li>
+                <li class="nav5">
+                    <a href="kalender.html">Kalender</a>
+                </li>
+                <li class="nav6">
+                    <a href="info.html" id="actief">Info</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" id="hamburger">
+            <img src="./Afbeeldingen/icons/icons8-menu.svg">
+        </a>
+    </header>
+
+    <div class="bodyZonderHeader">
+        <main>
+            <div id="infoLocatie">
+                <h1>Locatie</h1>
+                <p>
+                    Ons voetbalterrein bevindt zich op onderstaand adres:<br>
+                    <strong>Hemelrijkstraat 9620 Zottegem, België</strong>
+                </p>
+            </div>
+            <div id="infoContact">
+                <h1>Contact</h1>
+                <p>
+                    U kan ons contacteren via het e-mailadres: <br>
+                    <strong>jongbevegem@gmail.com</strong>
+                </p>
+            </div>
+            <iframe id="map"
+                src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Hemelrijkstraat,%209620%20Zottegem+(Jong%20Bevegem)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footerLinks">
+            <p class="footerP">ADRES</p> <br class="footerBr">
+            <p>Hemelrijkstraat <br>9620 Zottegem</p>
+        </div>
+        <br>
+        <br>
+        <div class="footerMidden">
+            <p class="footerP"> VOLG ONS OP </p> <br class="footerBr">
+            <a href="https://www.google.be/maps/place/Jong+Bevegem/@50.8669969,3.8241055,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3a729059b57b3:0x80809011eb730bbe!8m2!3d50.8669969!4d3.8262942"
+                target="_blank"><img src="Afbeeldingen/icons/map.svg" alt="icoon van een map" class="icon_footer"></a>
+            <a href="mailto:jongbevegem@gmail.com"><img src="Afbeeldingen/icons/envelope.svg"
+                    alt="icoon van een envelope" class="icon_footer"></a>
+            <a href="https://www.facebook.com/JongBevegem/" target="_blank"><img src="Afbeeldingen/icons/facebook.svg"
+                    alt="icoon van facebook" class="icon_footer"></a>
+            <a href="https://www.instagram.com/jongbevegem/" target="_blank"><img src="Afbeeldingen/icons/instagram.svg"
+                    alt="icoon van instagram" class="icon_footer"></a>
+        </div>
+        <br>
+        <br>
+        <div class="footerRechts">
+            <p class="footerP">Contact</p> <br class="footerBr">
+            <p>jongbevegem@gmail.com <br> +32471851545</p>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Jong Bevegem &copy; 2021 - All rights reserved.</p>
+    </div>
+
+    <script id="script">
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
