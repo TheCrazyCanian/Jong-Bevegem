@@ -28,8 +28,8 @@ with open('Speler Van De Week.csv', 'r') as infile:
             lineCount += 1
         writer.writerow('')
         namen = dict(sorted(namen.items(), key=lambda item: item[1]))
-        for k, v in namen.items():
-            writer.writerow([k, v])
-        writer.writerow('')
         lineCount -= 1
+        for k, v in namen.items():
+            writer.writerow([k, ('%.2f' % (v / lineCount))])
+        writer.writerow('')
         writer.writerow(['Aantal Personen die stemden', lineCount])
