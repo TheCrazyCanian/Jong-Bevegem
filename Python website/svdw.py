@@ -6,12 +6,14 @@ namen = {"Anton Vanhauwere": 0, "Dries Hofman": 0, "Dries Uytterhaegen": 0, "Emi
 lineCount = 0
 with open('Speler Van De Week.csv', 'r') as infile:
     reader = csv.DictReader(infile)
-    with open('SVDW.csv', 'w', newline='') as outfile:
+    filename = ('SVDW%s_%s_%s.csv' % (datetime.now().strftime('%d'),
+                datetime.now().strftime('%m'), datetime.now().strftime('%Y')))
+    with open(filename, 'w', newline='') as outfile:
         writer = csv.writer(outfile, delimiter=',')
         for row in reader:
             if lineCount == 0:
                 writer.writerow(
-                    [('Date this file was created: %s' % datetime.now().strftime('%x'))])
+                    [('Date this file was created: %s-%s-%s' % (datetime.now().strftime('%d'), datetime.now().strftime('%m'), datetime.now().strftime('%Y')))])
                 writer.writerow(['Naam schrijver formulier',
                                 'Nummer 1', 'Nummer 2', 'Nummer 3', 'Datum ingediend', 'Opmerkingen'])
                 lineCount += 1
