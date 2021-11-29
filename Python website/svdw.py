@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 namen = {"Anton Vanhauwere": 0, "Dries Hofman": 0, "Dries Uytterhaegen": 0, "Emiel van Wetter": 0, "Gilles Speltincx": 0, "Isaak Noerens": 0, "Jari Verhecken": 0, "Jens De Temmerman": 0, "Jens Lateur": 0, "Jona Vangansbeke": 0, "Lucas Ardyns": 0, "Maarten Van Snick": 0, "Marcel Machiels": 0,
-         "Mathias Schepers": 0, "Matthias Callebaut": 0, "Matthieu De Pauw": 0, "Mauritz Carlier": 0, "Michiel Degroote": 0, "Miel Herreman": 0, "Nisse Verstuyft": 0, "Reggie Demoor": 0, "Sem Backaert": 0, "Thomas Schepers": 0, "Tim Notebaert": 0, "Wout Van der Meulen": 0}
+         "Mathias Schepers": 0, "Matthias Callebaut": 0, "Matthieu De Pauw": 0, "Mauritz Carlier": 0, "Miel Herreman": 0, "Nisse Verstuyft": 0, "Reggie Demoor": 0, "Sem Backaert": 0, "Thomas Schepers": 0, "Tim Notebaert": 0, "Wout Van der Meulen": 0}
 lineCount = 0
 with open('Speler Van De Week.csv', 'r') as infile:
     reader = csv.DictReader(infile)
@@ -38,7 +38,7 @@ with open('Speler Van De Week.csv', 'r') as infile:
 with open('SVDWTotaal.csv') as infile:
     reader = csv.reader(infile)
     oudTotaal = {row[0]: row[1] for idx,
-                 row in enumerate(reader) if idx in range(0, 25)}
+                 row in enumerate(reader) if idx in range(0, 24)}
 
 with open('SVDWTotaal.csv', 'w', newline='') as outfile:
     writer = csv.writer(outfile, delimiter=',')
